@@ -1,0 +1,92 @@
+h1{ 
+    font-size: 25px;
+    text-align: center; /*bu h1 başlığında our menu boyutu ayarlanmıştır*/          
+}
+.p{/*tüm paragraflar için ortak olan ayarlamalar yapılmıştır.*/        
+    margin: 15px;
+    border: 2px solid #000;
+    float: left;
+    background-color: aliceblue
+ }
+ h3 {/*alt başlıklar için ayarlamaların yapıldığı yer.*/ 
+    padding: 5%;
+    margin-left: 18%;/*div in tam ortalanması için yapılan ayar.*/ 
+    margin-right: 18%;/*div in tam ortalanması için yapılan ayar.*/ 
+    text-align: center;/*yazının tam ortada olması için yapılan ayar.*/ 
+    border: 1px solid #000; /*divlerin sınır ayarı ve kalınlığı.*/ 
+    position: relative;
+    bottom:10%;
+    
+}
+@media  (min-width:992px) {/*masaüstü görünüm için ayarlamalar yapılmıştır.*/        
+    .p{/*masaüstü görünüm için paragraflar uygun halde güncellenmiştir.*/               
+        margin: 0.5%;
+        font-size: 155%;
+        width: 32.2%;
+        height: 300px;
+       
+    }
+    #sevens{  /*alt başlık 7 nin masaüstün de görünümü için o paragrafa id verip istenildiği gibi düzenlenmiştir.*/        
+        font-size: 155%;
+        margin-left: 33.6%;
+        
+    }
+ }
+@media  (min-width:768px) and (max-width:991px){ /*tablet görünüm için ayarlamalar yapılmıştır.*/        
+    h3{
+        bottom:17px;
+    }
+    div.p{ /*tablet görünüm için paragraflar uygun halde güncellenmiştir.*/ 
+        font-size: 90%;
+        width: 45%;
+        height: 70%;
+    }
+    #sevens{ /*alt başlık 7 nin tablet görünümü için o paragrafa id verip istenildiği gibi düzenlenmiştir.*/        
+        font-size: 90%;
+        width: 94%;
+        height: 20%;
+    }
+    
+    h1{ /*h1 başlığın  tablet görünümü için ayarlamalar yapılmıştır.*/        
+        font-size: 25px;
+        margin-right:4%;
+    
+    }
+   
+}
+@media  (max-width:767px){/*mobil görünüm için ayarlamalar yapılmıştır.*/   
+    div.p{/*mobil görünüm için paragraflar uygun halde güncellenmiştir.*/
+        font-size: 90%;
+        width: 46%;
+        height: 180px;
+        margin-left: 28%;
+        
+    }
+    h1{/*h1 başlığın  mobil görünümü için ayarlamalar yapılmıştır.*/ 
+        font-size: 23px;
+        margin-right: 0%;
+    }
+}
+
+/*Her bir alt başlık için farklı renklerin kullanıldığı yer.*/ 
+.first{
+    background: yellow
+}
+.second{
+    background: orange
+}
+.third{
+    background: greenyellow
+}
+.fourth{
+    background: darkmagenta
+}
+.fifth{
+    background: darkblue
+}
+.sixth{
+    background: cyan
+}
+.seventh{
+    background: gray
+}
